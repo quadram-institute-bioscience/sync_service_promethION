@@ -10,6 +10,7 @@ sudo make install
 
 #Copy lsyncd rotation config into /etc/logrotate.d/
 sudo cp lsyncd /etc/logrotate.d/
+sudo logrotate /etc/logrotate.conf
 
 #Copy lsyncd.conf  into /etc/
 sudo cp lsyncd.conf /etc/
