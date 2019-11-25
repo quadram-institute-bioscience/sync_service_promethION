@@ -1,0 +1,14 @@
+#/etc/logrotate.d/lsyncd
+
+/var/log/lsyncd/lsyncd.log
+/var/log/lsyncd/lsyncd.status
+{
+rotate 4
+weekly
+minsize 10M
+missingok
+create 640 prom prom
+notifempty
+compress
+delaycompress
+}
