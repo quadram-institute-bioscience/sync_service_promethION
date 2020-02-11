@@ -21,5 +21,6 @@ sudo cp lsyncd.conf /etc/
 sudo cp lsyncd.service /etc/systemd/system/
 #Enable lsyncd service
 sudo systemctl enable lsyncd.service
+sudo mkdir /var/log/lsyncd
 #Start lsyncd service
 sudo systemctl start lsyncd.service
