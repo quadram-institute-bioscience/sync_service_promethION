@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Install dependencies
-sudo apt install lua5.3-dev
+sudo apt install lua5.3-dev lua5.3 build-essential cmake
 
 #Clone and install lsyncd
 cd ~/Documents
@@ -10,6 +10,8 @@ cmake .
 make
 sudo make install
 
+#Go back to the gitted folder
+cd $OLDPWD
 #Copy lsyncd rotation config into /etc/logrotate.d/
 sudo cp lsyncd /etc/logrotate.d/
 sudo logrotate /etc/logrotate.conf
