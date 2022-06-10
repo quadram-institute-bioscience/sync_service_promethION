@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Install dependencies
-sudo apt install lua5.3-dev lua5.3 build-essential cmake
+sudo apt install liblua5.3-dev lua5.3 build-essential cmake
 
 #Clone and install lsyncd
 cd ~/Documents
