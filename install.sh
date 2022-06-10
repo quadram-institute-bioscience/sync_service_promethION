@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Install dependencies
-sudo apt install lua5.3-dev lua5.3
+sudo apt install liblua5.3-dev lua5.3
 
 #Clone and install lsyncd
 cd ~/Documents
